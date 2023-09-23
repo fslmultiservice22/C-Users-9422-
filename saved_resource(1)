@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="is-not-authenticated is-not-pro is-not-trial  theme-dark">
+<head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">	<script nonce="ipTwiHzourZP6pRIzhlgeQ==">window.initData = {};</script>
+	<link rel="dns-prefetch" href="https://s3.amazonaws.com"><title>TradingView Idea Image — TradingView</title>
+	<!-- { block personal_css_bundle } -->
+		<!-- render_css_bundle('base') -->
+		<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/7624.85a46f1fadf76e279382.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/78707.82dca75e9f28e0c0ffda.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/96972.3ff50c27a31c85df6216.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/75398.d1cd520c56bc94ad0bb2.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/34145.477a156d6ce5bc1ebf49.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/31755.721cbfb1a5d6784e3109.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/8.3f7148b7346ab712d102.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/66690.c7183a76dc0599de9f42.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/49276.3fe1f43c82233f863255.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/3616.4954fa7ac798b5bf5fc3.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/75667.e9e97deb656edf75df1e.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/83326.5fbf66a538a79a9beeb7.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/5517.c7e1f47b9a414f022bd6.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/27480.fccac3c3527971e2f514.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/80529.5854869a8dd44caec461.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/89058.58a2c156deeef0055155.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/83424.78f42a449def1a889eac.css" rel="stylesheet"/>
+	<!-- { endblock personal_css_bundle } -->
+
+	<!-- { block extra_styles } -->
+	<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/7624.85a46f1fadf76e279382.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/78707.82dca75e9f28e0c0ffda.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/96972.3ff50c27a31c85df6216.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/75398.d1cd520c56bc94ad0bb2.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/34145.477a156d6ce5bc1ebf49.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/31755.721cbfb1a5d6784e3109.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/8.3f7148b7346ab712d102.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/66690.c7183a76dc0599de9f42.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/49276.3fe1f43c82233f863255.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/3616.4954fa7ac798b5bf5fc3.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/75667.e9e97deb656edf75df1e.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/83326.5fbf66a538a79a9beeb7.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/5517.c7e1f47b9a414f022bd6.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/27480.fccac3c3527971e2f514.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/80529.5854869a8dd44caec461.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/89058.58a2c156deeef0055155.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/83424.78f42a449def1a889eac.css" rel="stylesheet"/>
+	<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/18619.d5047247795d936cc9e9.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/34145.477a156d6ce5bc1ebf49.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/63737.6c7ac4e8b2eacadb7284.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/8.3f7148b7346ab712d102.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/21009.4eb0a0f0a2fdf30a6697.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/79161.4f3444614487d9e88192.css" rel="stylesheet"/>
+<link crossorigin="anonymous" type="text/css" href="https://static.tradingview.com/static/bundles/7866.363404210ae27974f9bf.css" rel="stylesheet"/>
+	<!-- { endblock extra_styles } --><script nonce="ipTwiHzourZP6pRIzhlgeQ==">
+	window.locale = 'en';
+	window.language = 'en';
+</script>
+	<!-- { block personal_js_bundle } -->
+	<script nonce="ipTwiHzourZP6pRIzhlgeQ==">window.initData = window.initData || {};
+			initData.symbol = undefined;</script>
+	<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/runtime.f65185f7acbded412380.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/en.17425.18caaade3c414e0f872f.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/react.94b419cafcf4d7d23440.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/23127.e1a5a557b0a07cfdd28e.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/14171.7711348aa9114d70aafa.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/73315.2625295776f5f4aace30.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/58407.4b417ce9a40a6eb2d7bd.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/13886.dfbfa9d31c672b89dc15.js" ></script>
+<script defer crossorigin="anonymous" type="text/javascript" src="https://static.tradingview.com/static/bundles/snapshot.43cc16f4087975b55669.js" ></script>
+	<!-- { endblock personal_js_bundle } -->
+
+	<!-- { block additional_js_bundle } -->
+	<!-- { endblock additional_js_bundle } -->	<script nonce="ipTwiHzourZP6pRIzhlgeQ==">
+		window.initData = window.initData || {};
+		window.initData.theme = "dark";
+	</script>
+
+	<script nonce="ipTwiHzourZP6pRIzhlgeQ==">var environment = "battle";
+		window.WS_HOST_PING_REQUIRED = true;
+		window.BUILD_TIME = "2023_03_24-11_21";
+		window.WEBSOCKET_HOST = "data.tradingview.com";
+		window.WEBSOCKET_PRO_HOST = "prodata.tradingview.com";
+		window.WEBSOCKET_HOST_FOR_DEEP_BACKTESTING = "history-data.tradingview.com";
+		window.TradingView = window.TradingView || {};
+	</script>
+
+
+
+	<script nonce="ipTwiHzourZP6pRIzhlgeQ==">var is_authenticated = false;
+		var user = {"username":"Guest","following":"0","followers":"0","ignore_list":[],"available_offers":{}};
+		window.initData.api_host = "payflowlink.paypal.com";
+		window.initData.price_alerts_url = "https://alerts.tradingview.com/alerts/";
+		window.initData.priceAlertsFacadeClientUrl = "https://pricealerts.tradingview.com";
+		window.initData.screener_alerts_base_url = "/screener_alerts/";
+		window.initData.currentLocaleInfo = {"language":"en","language_name":"English","flag":"us","geoip_code":"us","priority":1000,"iso":"en","iso_639_3":"eng","show_on_widgets":true,"global_name":"English","is_only_recommended_tw_autorepost":true};
+		window.initData.offerButtonInfo = {"class_name":"tv-header__offer-button-container--trial-join","title":"Get started","href":"/gopro/?source=header_go_pro_button&feature=start_free_trial","subtitle":null,"expiration":null};
+		window.initData.settings = {'S3_LOGO_SERVICE_BASE_URL': 'https://s3-symbol-logo.tradingview.com/', 'S3_NEWS_IMAGE_SERVICE_BASE_URL': 'https://s3.tradingview.com/news/', 'WEBPACK_STATIC_PATH': 'https://static.tradingview.com/static/bundles/'};
+		window.countryCode = "IT";
+
+
+			window.__initialEnabledFeaturesets =
+				(window.__initialEnabledFeaturesets || []).concat(
+					['tv_production'].concat(
+						window.ClientCustomConfiguration && window.ClientCustomConfiguration.getEnabledFeatureSet
+							? JSON.parse(window.ClientCustomConfiguration.getEnabledFeatureSet())
+							: []
+					)
+				);
+
+			if (window.ClientCustomConfiguration && window.ClientCustomConfiguration.getDisabledFeatureSet) {
+				window.__initialDisabledFeaturesets = JSON.parse(window.ClientCustomConfiguration.getDisabledFeatureSet());
+			}
+
+
+
+			var lastGlobalNotificationIds = [10417,10414,10411,10408,10405,10402,10365,10362,10360,10293,10254];
+
+		var shopConf = {
+			offers: [],
+		};
+
+		var featureToggleState = {"black_friday_extend_limitation":1.0,"show_live_streams_on_main_page":1.0,"chart_autosave_5min":1.0,"chart_autosave_30min":1.0,"remove_line_tools_from_content":1.0,"autosave_line_tools_immediately":1.0,"subscribe_line_tool_notifications":1.0,"subscribe_shared_line_tool_notifications":1.0,"do_not_invalidate_chart_on_changing_line_tools":1.0,"trailing_stop_from_chart":1.0,"enable_ts_while_brokers_dont_support_ts_modify":1.0,"no_overlap_mode_enabled":1.0,"allow_brackets_profit_loss":1.0,"enable_new_execution_style":1.0,"enable_trading_in_replay":1.0,"enable_place_order_context_in_instant_mode":1.0,"enable_edit_order_context_in_instant_mode":1.0,"disable_price_source_property_in_replay":1.0,"pause_replay_during_point_selection":1.0,"center_alignment_replay_position":1.0,"alerts-send-extra-update":1.0,"alerts-show-splitted-limits":1.0,"alerts-restrict-offline-clear-requests":1.0,"alerts-dirty-migration-binance":1.0,"alerts-dirty-migration-bitmex":1.0,"alerts-dirty-migration-bitmex-patch-2":1.0,"alerts-dirty-migration-kraken":1.0,"alerts-dirty-migration-kraken-patch-2":1.0,"alerts-dirty-migration-dydx":1.0,"alerts-dirty-migration-bitfinex":1.0,"alerts-dirty-migration-phemex":1.0,"alerts-dirty-migration-bingx":1.0,"widget-sheriff":1.0,"timeout_django_db":0.15,"timeout_django_charts_db":0.25,"timeout_django_symbols_lists_db":0.25,"timeout_django_minds_db":0.05,"timeout_django_logging_db":0.25,"disable_services_monitor_metrics":1.0,"enable_signin_recaptcha":1.0,"enable_idea_spamdetectorml":1.0,"enable_idea_spamdetectorml_comments":1.0,"enable_spamdetectorml_chat":1.0,"enable_minds_spamdetectorml":1.0,"evercookie_cancel_subscription":1.0,"disable-plan-connections":1.0,"backend-connections-in-token":0.05,"google-ads":1.0,"mobile-ads-ios":1.0,"mobile-ads-android":1.0,"google-one-tap-signin":1.0,"braintree-trial-implementation":1.0,"braintree-trial-in-order-dialog":1.0,"braintree-gopro-in-order-dialog":1.0,"braintree-apple-pay":1.0,"braintree-apple-pay-trial":1.0,"braintree-one-usd-verification":1.0,"braintree-3ds-enabled":1.0,"braintree-3ds-enabled-globaly":1.0,"braintree-3ds-allow-liability-shifted-transactions-only":1.0,"braintree-additional-card-checks-for-trial":1.0,"braintree-suspicious-card-check":1.0,"braintree-duplicate-card-check":1.0,"braintree-instant-settlement":1.0,"vertex-tax":1.0,"marked_symbols_enabled":1.0,"marketing_features_gopro_cta":1.0,"platform-ads-rotation":1.0,"minds_widget_enabled":1.0,"minds_on_symbol_page_enabled":1.0,"save_shared_line_tools":0.2,"screener-alerts-read-only":1.0,"ses_tracking":1.0,"streams_enabled":1.0,"streams_live_notifications":1.0,"enable_share_idea_via_twitter":1.0,"spark_translations":1.0,"spark_category_translations":1.0,"spark_tags_translations":1.0,"tvcoins_donations":1.0,"tvcoins_comment_donations":1.0,"unsubscribe_inactive_users":1.0,"show_can_i_get_refund_button":1.0,"pro_plan_initial_refunds_disabled":1.0,"daily_donations_limit":1.0,"daily_donations_to_user_limit":1.0,"enable_ideas_recommendations":1.0,"fail_on_duplicate_payment_methods_for_trial":1.0,"separate_symbol_search_tabs":1.0,"hide_suspicious_users_ideas":1.0,"disable_publish_strategy_range_based_chart":1.0,"desktop_version_notification_enabled":1.0,"snapshot_html_page":1.0,"streams_stats_profile":1.0,"restrict_simultaneous_requests":1.0,"login_from_new_device_email":1.0,"disable_session_prolonged_log":1.0,"ssr_worker_nowait":1.0,"show_checkbox_of_house_rules_to_idea_and_script":1.0,"broker_ACTIVTRADES":1.0,"hide_ACTIVTRADES_on_ios":1.0,"hide_ACTIVTRADES_on_android":1.0,"hide_ACTIVTRADES_on_mobile_web":1.0,"ACTIVTRADES_beta":1.0,"broker_ALLY":1.0,"hide_ALLY_on_ios":1.0,"hide_ALLY_on_android":1.0,"hide_ALLY_on_mobile_web":1.0,"ally_use_new_sso_url":1.0,"broker_ALOR":1.0,"hide_ALOR_on_ios":1.0,"hide_ALOR_on_android":1.0,"hide_ALOR_on_mobile_web":1.0,"broker_ALPACA":1.0,"hide_ALPACA_on_ios":1.0,"hide_ALPACA_on_android":1.0,"hide_ALPACA_on_mobile_web":1.0,"broker_AMP":1.0,"hide_AMP_on_ios":1.0,"hide_AMP_on_android":1.0,"hide_AMP_on_mobile_web":1.0,"broker_BINANCE":1.0,"hide_BINANCE_on_android":1.0,"hide_BINANCE_on_mobile_web":1.0,"broker_BINGBON":1.0,"hide_BINGBON_on_android":1.0,"hide_BINGBON_on_mobile_web":1.0,"broker_BITGET":1.0,"hide_BITGET_on_ios":1.0,"hide_BITGET_on_android":1.0,"hide_BITGET_on_mobile_web":1.0,"BITGET_beta":1.0,"broker_BITSTAMP":1.0,"hide_BITSTAMP_on_ios":1.0,"hide_BITSTAMP_on_android":1.0,"hide_BITSTAMP_on_mobile_web":1.0,"broker_BLACKBULL":1.0,"hide_BLACKBULL_on_ios":1.0,"hide_BLACKBULL_on_android":1.0,"hide_BLACKBULL_on_mobile_web":1.0,"broker_CAPITALCOM":1.0,"hide_CAPITALCOM_on_ios":1.0,"hide_CAPITALCOM_on_android":1.0,"hide_CAPITALCOM_on_mobile_web":1.0,"hide_CHAKA_on_ios":1.0,"hide_CHAKA_on_android":1.0,"hide_CHAKA_on_mobile_web":1.0,"broker_CITYINDEX":1.0,"hide_CITYINDEX_on_ios":1.0,"hide_CITYINDEX_on_android":1.0,"hide_CITYINDEX_on_mobile_web":1.0,"hide_CQG_on_ios":1.0,"hide_CQG_on_android":1.0,"hide_CQG_on_mobile_web":1.0,"broker_CURRENCYCOM":1.0,"hide_CURRENCYCOM_on_ios":1.0,"hide_CURRENCYCOM_on_android":1.0,"hide_CURRENCYCOM_on_mobile_web":1.0,"hide_DERAYAH_on_ios":1.0,"hide_DERAYAH_on_android":1.0,"hide_DERAYAH_on_mobile_web":1.0,"DERAYAH_beta":1.0,"broker_DHAN":1.0,"hide_DHAN_on_android":1.0,"hide_DHAN_on_mobile_web":1.0,"broker_DORMAN":1.0,"hide_DORMAN_on_ios":1.0,"hide_DORMAN_on_android":1.0,"hide_DORMAN_on_mobile_web":1.0,"hide_DUMMY_on_ios":1.0,"hide_DUMMY_on_android":1.0,"hide_DUMMY_on_mobile_web":1.0,"broker_EASYMARKETS":1.0,"hide_EASYMARKETS_on_ios":1.0,"hide_EASYMARKETS_on_android":1.0,"hide_EASYMARKETS_on_mobile_web":1.0,"hide_EIGHTCAP_on_ios":1.0,"hide_EIGHTCAP_on_android":1.0,"hide_EIGHTCAP_on_mobile_web":1.0,"broker_FINANZEN":1.0,"hide_FINANZEN_on_ios":1.0,"hide_FINANZEN_on_android":1.0,"hide_FINANZEN_on_mobile_web":1.0,"broker_FOREXCOM":1.0,"hide_FOREXCOM_on_mobile_web":1.0,"forexcom_session_v2":1.0,"hide_FTX_on_ios":1.0,"hide_FTX_on_android":1.0,"hide_FTX_on_mobile_web":1.0,"ftx_request_server_logger":1.0,"broker_FXCM":1.0,"hide_FXCM_on_mobile_web":1.0,"broker_FXCM_token_v2":1.0,"broker_FXOPEN":1.0,"hide_FXOPEN_on_ios":1.0,"hide_FXOPEN_on_android":1.0,"hide_FXOPEN_on_mobile_web":1.0,"broker_GEMINI":1.0,"hide_GEMINI_on_ios":1.0,"hide_GEMINI_on_android":1.0,"hide_GEMINI_on_mobile_web":1.0,"broker_GLOBALPRIME":1.0,"hide_GLOBALPRIME_on_ios":1.0,"hide_GLOBALPRIME_on_android":1.0,"hide_GLOBALPRIME_on_mobile_web":1.0,"hide_HITBTC_on_ios":1.0,"hide_HITBTC_on_android":1.0,"hide_HITBTC_on_mobile_web":1.0,"broker_IBKR":1.0,"hide_IBKR_on_ios":1.0,"hide_IBKR_on_android":1.0,"hide_IBKR_on_mobile_web":1.0,"check_ibkr_side_maintenance":1.0,"ibkr_request_server_logger":1.0,"ibkr_parallel_provider_initialization":1.0,"broker_IBROKER":1.0,"hide_IBROKER_on_ios":1.0,"hide_IBROKER_on_android":1.0,"hide_IBROKER_on_mobile_web":1.0,"broker_INFOYATIRIM":1.0,"hide_INFOYATIRIM_on_ios":1.0,"hide_INFOYATIRIM_on_android":1.0,"hide_INFOYATIRIM_on_mobile_web":1.0,"INFOYATIRIM_beta":1.0,"broker_IRONBEAM":1.0,"hide_IRONBEAM_on_ios":1.0,"hide_IRONBEAM_on_android":1.0,"hide_IRONBEAM_on_mobile_web":1.0,"hide_MOCKBROKER_on_ios":1.0,"hide_MOCKBROKER_on_android":1.0,"hide_MOCKBROKER_on_mobile_web":1.0,"hide_MODAL_on_ios":1.0,"hide_MODAL_on_android":1.0,"hide_MODAL_on_mobile_web":1.0,"broker_OANDA":1.0,"hide_OANDA_on_mobile_web":1.0,"broker_OKX":1.0,"hide_OKX_on_android":1.0,"hide_OKX_on_mobile_web":1.0,"broker_OPTIMUS":1.0,"hide_OPTIMUS_on_ios":1.0,"hide_OPTIMUS_on_android":1.0,"hide_OPTIMUS_on_mobile_web":1.0,"broker_ORAMA":1.0,"hide_ORAMA_on_ios":1.0,"hide_ORAMA_on_android":1.0,"hide_ORAMA_on_mobile_web":1.0,"broker_OSMANLI":1.0,"hide_OSMANLI_on_ios":1.0,"hide_OSMANLI_on_android":1.0,"hide_OSMANLI_on_mobile_web":1.0,"broker_PEPPERSTONE":1.0,"hide_PEPPERSTONE_on_mobile_web":1.0,"broker_PHILLIPNOVA":1.0,"hide_PHILLIPNOVA_on_ios":1.0,"hide_PHILLIPNOVA_on_android":1.0,"hide_PHILLIPNOVA_on_mobile_web":1.0,"broker_SAXOBANK":1.0,"hide_SAXOBANK_on_ios":1.0,"hide_SAXOBANK_on_android":1.0,"hide_SAXOBANK_on_mobile_web":1.0,"hide_SKILLING_on_ios":1.0,"hide_SKILLING_on_android":1.0,"hide_SKILLING_on_mobile_web":1.0,"skilling-brokers-side-maintenance":1.0,"broker_SPREADEX":1.0,"hide_SPREADEX_on_ios":1.0,"hide_SPREADEX_on_android":1.0,"hide_SPREADEX_on_mobile_web":1.0,"broker_STONEX":1.0,"hide_STONEX_on_ios":1.0,"hide_STONEX_on_android":1.0,"hide_STONEX_on_mobile_web":1.0,"broker_TICKMILL":1.0,"hide_TICKMILL_on_ios":1.0,"hide_TICKMILL_on_android":1.0,"hide_TICKMILL_on_mobile_web":1.0,"hide_TIGER_on_ios":1.0,"hide_TIGER_on_android":1.0,"hide_TIGER_on_mobile_web":1.0,"broker_TIMEX":1.0,"hide_TIMEX_on_ios":1.0,"hide_TIMEX_on_android":1.0,"hide_TIMEX_on_mobile_web":1.0,"hide_TINKOFF_on_ios":1.0,"hide_TINKOFF_on_android":1.0,"hide_TINKOFF_on_mobile_web":1.0,"broker_TRADESTATION_V3":1.0,"hide_TRADESTATION_V3_on_mobile_web":1.0,"tradestation_request_server_logger":1.0,"broker_TRADIER":1.0,"hide_TRADIER_on_ios":1.0,"hide_TRADIER_on_android":1.0,"hide_TRADIER_on_mobile_web":1.0,"broker_TRADOVATE":1.0,"hide_TRADOVATE_on_mobile_web":1.0,"broker_VELOCITY":1.0,"hide_VELOCITY_on_ios":1.0,"hide_VELOCITY_on_android":1.0,"hide_VELOCITY_on_mobile_web":1.0,"broker_WHSELFINVEST":1.0,"hide_WHSELFINVEST_on_ios":1.0,"hide_WHSELFINVEST_on_android":1.0,"hide_WHSELFINVEST_on_mobile_web":1.0,"broker_id_session":1.0,"mobile_trading_web":1.0,"mobile_trading_ios":1.0,"mobile_trading_android":1.0,"modal_suspend":1.0,"trading_request_server_logger":1.0,"rest_request_server_logger":1.0,"review_popup_on_chart":1.0,"show_concurrent_connection_warning":1.0,"enable_trading_server_logger":1.0,"enable_qty_calculator_in_replay":1.0,"new_header_toolbar":1.0,"enable_symbols_popularity_showing":1.0,"enable_symbols_group_by_alias":1.0,"enable_symbols_group_by_alias_widget":1.0,"enable_translations_s3_upload":1.0,"pushstream_connections_observer":1.0,"disable_snowplow_platform_events":1.0,"disable_phone_verification_sms":1.0,"disable_sms_for_particular_countries":1.0,"tvd_new_tab":1.0,"tvd_auto_save_changes_dialog":1.0,"tvd_app_quit_win32":1.0,"notify_idea_mods_about_first_publication":1.0,"RU_SF_disable":1.0,"RU_VOR_disable":1.0,"enable_monaco_editor":1.0,"symbol_search_country_sources":1.0,"bottom_panel_track_events":1.0,"nyse_agreement":1.0,"bist_mixed_agreement":1.0,"enable_symbol_search_pagination":1.0,"careers_toast":1.0,"show_data_problems_in_help_center":1.0,"enable_apple_device_check":1.0,"disable_retry_load_linetools_from_storage":1.0,"enable_symbol_search_recents":1.0,"enable_new_url_for_linetools_loading":1.0,"websocket_send_locale":1.0,"more_branding":1.0,"enable_news_block_in_watchlist_extended_view":1.0,"enable_symbol_search_sort_by_country":1.0,"enable_symbol_search_version_3":1.0,"enable_push_notifications_android":1.0,"enable_sign_in_popup_with_evercookie":1.0,"platform_accessibility":1.0,"enable_toggle_streams_rtmp_url":1.0};</script>
+
+<script nonce="ipTwiHzourZP6pRIzhlgeQ==">
+	window.initData = window.initData || {};
+
+	window.initData.snowplowSettings = {
+		collectorId: 'tv_cf',
+		url: 'snowplow-pixel.tradingview.com',
+		params: {
+			appId: 'tradingview',
+		},
+		enabled: true,
+	}
+</script>
+	<script nonce="ipTwiHzourZP6pRIzhlgeQ==">window.PUSHSTREAM_URL = "wss://pushstream.tradingview.com";
+		window.TV_LIVE_MEDIA_SERVER_LIVE_URLS = {"NA":"tv-live-dstream-us.tradingview.com","EU":"tv-live-dstream-eu.tradingview.com"};
+		window.TV_LIVE_MEDIA_SERVER_DOMAIN = "tv-dstream.tradingview.com";
+		window.TV_LIVE_MEDIA_SERVER_RTMP_URL = "tv-dstream.tradingview.com:8443";
+		window.TV_LIVE_DIRECTOR_DOMAIN = "tv-dlive.tradingview.com";
+		window.TV_LIVE_MEDIA_URL = "https://d3etl5p4eidc49.cloudfront.net";
+		window.CHARTEVENTS_URL = "https://chartevents-reuters.tradingview.com/";
+		window.ECONOMIC_CALENDAR_URL = "https://economic-calendar.tradingview.com/";
+		window.EARNINGS_CALENDAR_URL = "https://scanner.tradingview.com";
+		window.NEWS_SERVICE_URL = "https://news-headlines.tradingview.com";
+		window.SS_HOST = "symbol-search.tradingview.com";
+		window.SS_URL = "";
+		window.SS_DOMAIN_PARAMETER = 'production';
+		window.DEFAULT_SYMBOL = "NASDAQ:AAPL";
+		window.COUNTRY_CODE_TO_DEFAULT_EXCHANGE = {"en":"US","us":"US","ae":"DFM","ar":"BCBA","au":"ASX","be":"EURONEXT_BRU","bh":"BAHRAIN","br":"BMFBOVESPA","ca":"TSX","ch":"SIX","cl":"BCS","zh_CN":"SSE","co":"BVC","cy":"CSECY","de_DE":"XETR","dk":"OMXCOP","ee":"OMXTSE","eg":"EGX","es":"BME","fi":"OMXHEX","fr":"EURONEXT_PAR","gr":"ATHEX","hk":"HKEX","hu":"BET","id":"IDX","il":"TASE","in":"BSE","is":"OMXICE","it":"MIL","ja":"TSE","ke":"NSEKE","kr":"KRX","kw":"KSE","lk":"CSELK","lt":"OMXVSE","lv":"OMXRSE","lu":"LUXSE","mx":"BMV","ms_MY":"MYX","ng":"NSENG","nl":"EURONEXT_AMS","no":"OSL","nz":"NZX","pe":"BVL","ph":"PSE","pl":"GPW","pt":"EURONEXT_LIS","qa":"QSE","rs":"BELEX","ru":"MOEX","ro":"BVB","ar_AE":"TADAWUL","sv_SE":"NGM","sg":"SGX","sk":"BSSE","th_TH":"SET","tn":"BVMT","tr":"BIST","zh_TW":"TWSE","uk":"LSE","ve":"BVCV","vi_VN":"HOSE","za":"JSE"};
+		window.HOTLISTS_URL = "https://hotlist.tradingview.com/";
+		window.SCREENER_HOST = "https://scanner.tradingview.com";
+		window.AWS_BBS3_DOMAIN = "https://tradingview-user-uploads.s3.amazonaws.com";
+		window.AWS_S3_CDN  = "https://s3.tradingview.com";
+
+			window.DATA_ISSUES_HOST = "https://support-middleware.tradingview.com";
+
+		window.TELEMETRY_HOSTS = {"charts":{"free":"https://telemetry.tradingview.com/free","pro":"https://telemetry.tradingview.com/pro","widget":"https://telemetry.tradingview.com/widget","ios_free":"https://telemetry.tradingview.com/charts-ios-free","ios_pro":"https://telemetry.tradingview.com/charts-ios-pro","android_free":"https://telemetry.tradingview.com/charts-android-free","android_pro":"https://telemetry.tradingview.com/charts-android-pro"},"alerts":{"all":"https://telemetry.tradingview.com/alerts"},"line_tools_storage":{"all":"https://telemetry.tradingview.com/line-tools-storage"},"news":{"all":"https://telemetry.tradingview.com/news"},"pine":{"all":"https://telemetry.tradingview.com/pine"},"calendars":{"all":"https://telemetry.tradingview.com/calendars"},"site":{"free":"https://telemetry.tradingview.com/site-free","pro":"https://telemetry.tradingview.com/site-pro","widget":"https://telemetry.tradingview.com/site-widget"},"trading":{"all":"https://telemetry.tradingview.com/trading"}};
+		window.TELEMETRY_WS_ERROR_LOGS_THRESHOLD = "100";
+		window.RECAPTCHA_SITE_KEY = "6Lcqv24UAAAAAIvkElDvwPxD0R8scDnMpizaBcHQ";
+		window.RECAPTCHA_SITE_KEY_V3 = "6LeQMHgUAAAAAKCYctiBGWYrXN_tvrODSZ7i9dLA";
+		window.GOOGLE_CLIENT_ID = "236720109952-v7ud8uaov0nb49fk5qm03as8o7dmsb30.apps.googleusercontent.com";
+
+		window.PINE_URL = "https://pine-facade.tradingview.com/pine-facade";</script>		<meta name="description" content="" />
+
+
+
+
+
+<link rel="icon" href="https://static.tradingview.com/static/images/favicon.ico">
+<meta name="application-name" content="TradingView" />
+
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="manifest" href="https://static.tradingview.com/static/images/favicon/manifest.json" />
+
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F8F9FD"> <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E222D"> 
+<meta name="apple-mobile-web-app-title" content="TradingView Site" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://static.tradingview.com/static/images/favicon/apple-touch-icon-180x180.png" /><link rel="link-locale" data-locale="en" href="https://www.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="in" href="https://in.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="de_DE" href="https://de.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="fr" href="https://fr.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="es" href="https://es.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="it" href="https://it.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="pl" href="https://pl.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="sv_SE" href="https://se.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="tr" href="https://tr.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="ru" href="https://ru.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="br" href="https://br.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="id" href="https://id.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="ms_MY" href="https://my.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="th_TH" href="https://th.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="vi_VN" href="https://vn.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="ja" href="https://jp.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="kr" href="https://kr.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="zh_CN" href="https://cn.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="zh_TW" href="https://tw.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="ar_AE" href="https://ar.tradingview.com/i/YIKTRDve/"><link rel="link-locale" data-locale="he_IL" href="https://il.tradingview.com/i/YIKTRDve/"><meta property="al:ios:app_store_id" content="1205990992" />
+	<meta property="al:ios:app_name" content="TradingView - trading community, charts and quotes" />
+
+
+
+
+
+<meta property="og:site_name" content="TradingView" /><meta property="og:type" content="article" /><meta property="og:title" content="TradingView Idea Image" /><meta property="og:image" content="https://s3.tradingview.com/y/YIKTRDve.png" /><meta property="og:description" content="" /><meta property="og:url" content="https://www.tradingview.com/i/YIKTRDve/" />
+
+
+
+<meta name="twitter:site" content="@TradingView" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="https://s3.tradingview.com/y/YIKTRDve.png" /><meta name="twitter:title" content="TradingView Idea Image" /><meta name="twitter:description" content="" /><meta name="twitter:url" content="https://www.tradingview.com/i/YIKTRDve/" /><meta name="ahrefs-site-verification" content="f729ff74def35be4b9b92072c0e995b40fcb9e1aece03fb174343a1b7a5350ce">
+</head>
+
+
+<body class="">
+
+
+
+	<div class='tv-snapshot-header'><div><header class="header-xBtjCevP"><a href="/" aria-label="TradingView main page" class="logo-container-xBtjCevP"><span class="logo-xBtjCevP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 28" width="36" height="28"><path fill="currentColor" d="M14 22H7V11H0V4h14v18zM28 22h-8l7.5-18h8L28 22z"/><circle fill="currentColor" cx="20" cy="8" r="4"/></svg></span><span class="logo-text-xBtjCevP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147 28" width="147" height="28"><path fill="currentColor" d="M4.793 22.024h3.702V7.519h4.843V4.02H0v3.5h4.793v14.504zM13.343 22.024h3.474v-6.06c0-2.105 1.09-3.373 2.74-3.373.582 0 1.039.101 1.571.279V9.345a3.886 3.886 0 00-1.166-.152c-1.42 0-2.713.938-3.145 2.18V9.346h-3.474v12.679zM27.796 22.303c1.75 0 3.068-.888 3.652-1.7v1.42h3.474V9.346h-3.474v1.42c-.584-.811-1.902-1.699-3.652-1.699-3.372 0-5.959 3.043-5.959 6.618 0 3.576 2.587 6.619 5.96 6.619zm.736-3.17c-1.928 0-3.196-1.445-3.196-3.448 0-2.004 1.268-3.45 3.196-3.45 1.927 0 3.195 1.446 3.195 3.45 0 2.003-1.268 3.448-3.195 3.448zM43.193 22.303c1.75 0 3.068-.888 3.651-1.7v1.42h3.474V3.007h-3.474v7.76c-.583-.812-1.901-1.7-3.651-1.7-3.373 0-5.96 3.043-5.96 6.618 0 3.576 2.587 6.619 5.96 6.619zm.735-3.17c-1.927 0-3.195-1.445-3.195-3.448 0-2.004 1.268-3.45 3.195-3.45 1.927 0 3.195 1.446 3.195 3.45 0 2.003-1.268 3.448-3.195 3.448zM55.166 7.412a2.213 2.213 0 002.232-2.206A2.213 2.213 0 0055.166 3a2.224 2.224 0 00-2.206 2.206 2.224 2.224 0 002.206 2.206zm-1.724 14.612h3.474V9.49h-3.474v12.533zM59.998 22.024h3.474v-6.187c0-2.435 1.192-3.601 2.815-3.601 1.445 0 2.232 1.116 2.232 2.941v6.847h3.474v-7.43c0-3.296-1.826-5.528-4.894-5.528-1.649 0-2.942.71-3.627 1.724V9.345h-3.474v12.679zM80.833 18.65c-1.75 0-3.22-1.319-3.22-3.246 0-1.952 1.47-3.246 3.22-3.246 1.75 0 3.22 1.294 3.22 3.246 0 1.927-1.47 3.246-3.22 3.246zm-.406 8.85c3.88 0 6.822-1.978 6.822-6.543V9.268h-3.474v1.42C83.09 9.7 81.72 8.99 80.098 8.99c-3.322 0-5.985 2.84-5.985 6.415 0 3.55 2.663 6.39 5.985 6.39 1.623 0 2.992-.735 3.677-1.673v.862c0 2.029-1.344 3.474-3.398 3.474-1.42 0-2.84-.482-3.956-1.572l-1.902 2.586c1.445 1.395 3.702 2.029 5.908 2.029zM94.594 22.024h3.27L105.32 4.02h-4.057l-5.021 12.501L91.145 4.02h-3.981l7.43 18.004zM108.508 7.266a2.213 2.213 0 002.231-2.206 2.213 2.213 0 00-2.231-2.206c-1.192 0-2.207.988-2.207 2.206 0 1.217 1.015 2.206 2.207 2.206zm-1.725 14.758h3.474V9.345h-3.474v12.679zM119.248 22.303c2.662 0 4.691-1.116 5.883-2.84l-2.587-1.927c-.583.887-1.673 1.597-3.271 1.597-1.673 0-3.169-.938-3.372-2.637h9.483c.076-.533.051-.888.051-1.192 0-4.133-2.916-6.238-6.238-6.238-3.854 0-6.669 2.865-6.669 6.618 0 4.007 2.942 6.619 6.72 6.619zm-3.221-8.165c.33-1.547 1.775-2.207 3.069-2.207 1.293 0 2.561.685 2.865 2.207h-5.934zM138.45 22.024h3.449l4.184-12.679h-3.728l-2.383 8.114-2.587-8.114h-2.662l-2.561 8.114-2.409-8.114h-3.703l4.21 12.679h3.448l2.359-7.202 2.383 7.202z"/></svg></span></a><button class="button-xBtjCevP intent-dark-xBtjCevP light-button-msfP1I4t variant-ghost-msfP1I4t color-gray-msfP1I4t size-medium-msfP1I4t typography-medium16px-msfP1I4t" style="--ui-lib-light-button-content-max-lines:1"><span class="content-msfP1I4t nowrap-msfP1I4t"><span class="ellipsis-container-msfP1I4t"><span class="button-content-xBtjCevP"><span class="button-icon-xBtjCevP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28" fill="none"><path stroke="currentColor" d="M19 15l2.5-2.5c1-1 1.5-3.5-.5-5.5s-4.5-1.5-5.5-.5L13 9M10 12l-2.5 2.5c-1 1-1.5 3.5.5 5.5s4.5 1.5 5.5.5L16 18M17 11l-5 5"/></svg></span><span class="button-text-xBtjCevP">Copy link</span></span></span></span></button><button class="launch-button-xBtjCevP button-OvB35Th_ size-medium-OvB35Th_ color-brand-OvB35Th_ variant-primary-OvB35Th_"><span class="content-OvB35Th_"><span class="launch-button-content-xBtjCevP"><span class="launch-button-icon-xBtjCevP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="currentColor" d="M24.72 9.3a1 1 0 0 1-.03 1.42l-7.3 7a1 1 0 0 1-1.43-.05l-4.71-5.23-6.56 6.28a1 1 0 1 1-1.38-1.44l7.3-7a1 1 0 0 1 1.43.05l4.71 5.23 6.56-6.28a1 1 0 0 1 1.41.03z"/></svg></span><span>Launch chart</span></span></span></button></header><div class="toast-container-xBtjCevP"></div></div></div>
+	<main class="main">
+		<img src='https://s3.tradingview.com/y/YIKTRDve.png' alt='TradingView Idea Image' class="tv-snapshot-image"/>
+	</main>
+
+<script nonce="ipTwiHzourZP6pRIzhlgeQ==">window.fbAppId = "155037361239837";</script>
+
+	<script nonce="ipTwiHzourZP6pRIzhlgeQ==">window.BLOG_LOCALIZED_URL = "https://www.tradingview.com/blog/en/";
+
+
+			initData.idc_exchanges_list = ["dfm","nzx","nzx_futures","bme","bme_stocks","luxse","szse","nag","tfx","sgx","sgx_stocks","sgx_futures","twse","bcba","bvc","bvcv","bmv","bvmt","bvl","bcs","six","bsse","bahrain","belex","egx","nseng","nseke","qse","cselk"];
+
+			initData.idc_delay_exchanges_list = ["nzx_futures","luxse","tfx","bvcv","bvmt","bsse","bahrain","nseke","cselk"];
+
+			initData.offlineAlertEventsOnInit = true;
+
+
+
+</script>
+		<script type="application/prs.init-data+json">
+		{
+			"gaId": "UA-24278967-1",
+			"gaVars": {"app":"web"},
+			"gadwId": "AW-353039917",
+			"fbTagId": "1508275579478794",
+			"yaTagId": "69731728"		}
+	</script>
+	<script type="application/prs.init-data+json">
+		{
+			"streams_enabled": true,
+			"days_to_deactivation": null,
+			"is_support_available": false,
+			"canSwitchTheme": false,
+			"tvPartnersHost": "https://tv-partners.tradingview.com"
+		}
+	</script>
+
+<meta name="tv:server-name" content="prod-frontend-web-b-8" /><div id="aria-live-regions-wrapper" class="aria-live-regions-wrapper">
+		<div aria-live="polite" aria-relevant="additions"></div>
+		<div aria-live="polite" aria-relevant="additions"></div>
+		<div aria-live="assertive" aria-relevant="additions"></div>
+		<div aria-live="assertive" aria-relevant="additions"></div>
+	</div>
+</body>
+</html>
