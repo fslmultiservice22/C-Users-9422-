@@ -1,7 +1,537 @@
 name: Jekyll site CI
 http://www.etoro.com
 on:
-  push:
+ //+------------------------------------------------------------------+
+//|                                                  KA-Gold Bot.mq4 |
+//|                           Copyright 2023, Hung_tthanh@yahoo.com. |
+//|                                             https://www.mql5.com |
+//+------------------------------------------------------------------+
+#property copyright "Copyright 2023, Hung_tthanh@yahoo.com."
+#property link      "https://www.mql5.com"
+#property version   "1.00"
+#property strict
+
+#define ExtBotName "KA-Gold Bot" //Bot Name
+#define Version "1.00"
+
+//--- input parameters
+input string  IndicatorSettings = "---------------------------------------------"; //-------- <Indicators Settings> --------
+input int      InpKeltnerPeriod     = 50;          //Keltner length
+input int      InpEMA10             = 10;          //EMA 1 period
+input int      InpEMA200            = 200;         //EMA 2 period  
+
+input string  TradingSettings = "---------------------------------------------"; //-------- <Trading Settings> --------
+input double   Inpuser_lot          = 0.01;        //Volume trade
+input double   InpSL_Pips           = 500;         //Stoploss (in Pips)
+input double   InpTP_Pips           = 500;         //TP (in Pips) (0 = No TP)
+input int      Inpuser_SLippage     = 3;           // Maximum slippage allow_Pips.
+input double   InpMax_spread        = 65;          //Maximum allowed spread (in Point) (0 = floating)
+
+input string  TrailingSettings = "---------------------------------------------"; //-------- <Trailing Settings> --------
+input double   InpTrailingTrigger   = 300;         //Trailing Trigger Pips (0 = Inactive)
+input double   InpTrailingStop      = 300;         //Trailing stop (in Pips)
+input double   InpTrailingStep      = 100;         //Trailing Step (in Pips)
+
+input string  TimeSettings = "---------------------------------------------"; //-------- <Trading Time Settings> --------
+input bool     InpTimeFilter        = true;        //Trading Time Filter
+input int      InpStartHour         = 2;           //Start Hour
+input int      InpStartMinute       = 30;          //Start Minute
+input int      InpEndHour           = 21;          //End Hour
+input int      InpEndMinute         = 0;           //End Minute
+
+input string  MoneyManagementSettings = "---------------------------------------------"; //-------- <Money Settings> --------
+input bool     isVolume_Percent     = true;        //Allow Volume Percent
+input double   InpRisk              = 1;           //Risk Percentage of Balance (%)
+
+input string  GeneralSettings = "---------------------------------------------"; //-------- <Generral Settings> --------
+input int      InpMagic             = 230701;      //Magic Number
+
+//Local parameters
+int      Pips2Points;    // slippage  3 pips    3=points    30=points
+double   Pips2Double;    // Stoploss 15 pips    0.015      0.0150
+int      slippage;
+double   acSpread;
+double   ExtTrailingTrigger   = 0.0;
+double   ExtTrailingStop      = 0.0;
+double   ExtTrailingStep      = 0.0;
+string   strComment = "";
+bool     isOrder = false;
+bool     isSLSellOrd_Trigger = false;
+bool     isSLBuyOrd_Trigger  = false;
+datetime last;
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+  {
+//---
+   //3 or 5 digits detection
+   //Pip and point
+   if(Digits % 2 == 1)
+     {
+      Pips2Double  = Point*10;
+      Pips2Points  = 10;
+      slippage = 10* Inpuser_SLippage;
+     }
+   else
+     {
+      Pips2Double  = Point;
+      Pips2Points  =  1;
+      slippage = Inpuser_SLippage;
+     }
+        
+   //---
+   ExtTrailingTrigger = InpTrailingTrigger * Pips2Double;
+   ExtTrailingStop = InpTrailingStop * Pips2Double;
+   ExtTrailingStep = InpTrailingStep * Pips2Double;
+//---
+   return(INIT_SUCCEEDED);
+}
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+  {
+//---
+   
+  }
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick() {
+//---
+   if(IsTradeAllowed() == false) {
+      Comment("KA-Gold Bot\nTrade not allowed.");
+      return;
+   }
+     
+    MqlDateTime structTime;
+    TimeCurrent(structTime);
+    structTime.sec = 0;
+    
+    //Set starting time
+    structTime.hour = InpStartHour;
+    structTime.min = InpStartMinute;       
+    datetime timeStart = StructToTime(structTime);
+    
+    //Set Ending time
+    structTime.hour = InpEndHour;
+    structTime.min = InpEndMinute;
+    datetime timeEnd = StructToTime(structTime);
+    
+    acSpread = MarketInfo(_Symbol, MODE_SPREAD);
+    
+   
+   strComment = "\n" + ExtBotName + " - v." + (string)Version;
+   strComment += "\nSever time = " + TimeToString(TimeCurrent(),TIME_DATE|TIME_SECONDS) + " day of week " + DayOfWeekDescription(structTime.day_of_week);
+   strComment += "\nTrading time = [" + (string)InpStartHour + "h" + (string)InpStartMinute + " --> " +  (string)InpEndHour + "h" + (string)InpEndMinute + "]";
+   
+   strComment += "\nCurrent Spread = " + (string)acSpread + " Points";
+
+
+   //Update Values
+   UpdateOrders();      
+   
+   TrailingStop();
+   
+   // Signal Calculation
+   int Signal = CalculateSignal(InpKeltnerPeriod);
+   
+   if(last != iTime(Symbol(), PERIOD_CURRENT, 0)) {
+      //Dieu kien giao dich theo phien My
+      if(InpTimeFilter) {
+         if(TimeCurrent() >= timeStart && TimeCurrent() < timeEnd) {
+            if(!isOrder) OpenTrades(Signal);
+         }
+      }
+      else {
+         if(!isOrder) OpenTrades(Signal);
+      }
+      
+      //update last time
+      last = iTime(Symbol(), PERIOD_CURRENT, 0);
+   }
+   //---
+   Comment(strComment);
+}
+//+------------------------------------------------------------------+
+
+int CalculateSignal(int period) {
+
+   int result = -1;
+   double avg;
+
+   double middle1 = iMA(NULL, 0, period, 0, MODE_EMA, PRICE_CLOSE, 1);
+   avg  = findAvg(period, 1);
+   double upper1 = middle1 + avg;
+   double lower1 = middle1 - avg;
+
+   double middle2 = iMA(NULL, 0, period, 0, MODE_EMA, PRICE_CLOSE, 2);
+   avg  = findAvg(period, 2);
+   double upper2 = middle2 + avg;
+   double lower2 = middle2 - avg;
+
+   strComment += StringConcatenate("\nUpper 1 = ",(string)NormalizeDouble(upper1, Digits()));
+   strComment += StringConcatenate("\nUpper 2 = ",(string)NormalizeDouble(upper2, Digits()));
+   strComment += StringConcatenate("\nLower 1 = ",(string)NormalizeDouble(lower1, Digits()));
+   strComment += StringConcatenate("\nLower 2 = ",(string)NormalizeDouble(lower2, Digits()));
+
+   // Đường EMA 10
+   double EMA10_1 = iMA(NULL,0, InpEMA10, 0, MODE_EMA, PRICE_CLOSE, 1);
+   double EMA10_2 = iMA(NULL,0, InpEMA10, 0, MODE_EMA, PRICE_CLOSE, 2);
+
+   // Đường EMA 200
+   double EMA200_1 = iMA(NULL,0, InpEMA200, 0, MODE_EMA, PRICE_CLOSE, 1);
+   double EMA200_2 = iMA(NULL,0, InpEMA200, 0, MODE_EMA, PRICE_CLOSE, 2);
+   
+   // BUY SIGNAL ---------------------
+   bool EntryBuy1 = false;
+   bool EntryBuy2 = false;
+   bool EntryBuy3 = false;
+   
+   if(Close[1] > upper1) EntryBuy1 = true;   
+   if(Close[1] > EMA200_1) EntryBuy2 = true;
+   if(EMA10_2 < upper2  && EMA10_1 > upper1) EntryBuy3 = true;
+   
+   if(EntryBuy1 && EntryBuy2 && EntryBuy3) result = OP_BUY;
+   
+   // SELL SIGNAL --------------------
+   bool EntrySell1 = false;
+   bool EntrySell2 = false;
+   bool EntrySell3 = false;
+   
+   if(Close[1] < lower1) EntrySell1 = true;
+   if(Close[1] < EMA200_1) EntrySell2 = true;
+   if(EMA10_2 > lower2 && EMA10_1 < lower1) EntrySell3 = true;
+   
+   if(EntrySell1 && EntrySell2 && EntrySell3) result = true;
+   
+   
+   //---
+   return result;
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+double findAvg(int period, int shift) {
+
+   double sum=0;
+   for(int x = shift ; x <(shift + period); x++)
+     {
+      sum += High[x] - Low[x];
+     }
+   sum = sum / period;
+   return (sum);
+}
+
+//+------------------------------------------------------------------+
+//| SEND ORDER                                                       |
+//+------------------------------------------------------------------+
+void OpenTrades(int entrySignal) {
+
+   double TP = 0, SL = 0;
+   double OpenPrice = (entrySignal == OP_BUY)? Ask : Bid;
+
+   string comment = ExtBotName;
+   //Calculate Lots
+   double lot1 = CalculateVolume();
+   
+   if(entrySignal == OP_BUY) {
+      //For BUY --------------------------------
+      TP = OpenPrice + NormalizeDouble(InpTP_Pips* Pips2Double, Digits);
+      SL = OpenPrice - NormalizeDouble(InpSL_Pips * Pips2Double, Digits);
+      
+      if(CheckSpreadAllow()                                    //Check Spread
+         && CheckVolumeValue(lot1)                             //Check volume
+         && CheckStopLoss(OpenPrice,  SL, TP)                  //Check Dist from SL, TP to OpenPrice         
+         && CheckMoneyForTrade(Symbol(), lot1, OP_BUY))        //Check Balance khi lenh cho duoc Hit
+      {
+         if(!OrderSend(Symbol(), OP_BUY, lot1, OpenPrice, slippage, SL, TP, comment, InpMagic, 0, clrBlue))
+         Print(__FUNCTION__,"--> OrderSend error ",GetLastError());
+      }   
+   }
+   else if(entrySignal == OP_SELL) {
+      //For SELL --------------------------------
+      TP = OpenPrice - NormalizeDouble(InpTP_Pips* Pips2Double, Digits);
+      SL = OpenPrice + NormalizeDouble(InpSL_Pips * Pips2Double, Digits);   
+   
+      if(CheckSpreadAllow()                                    //Check Spread
+         && CheckVolumeValue(lot1)                             //Check volume
+         && CheckStopLoss(OpenPrice,  SL, TP)                  //Check Dist from SL, TP to OpenPrice
+         && CheckMoneyForTrade(_Symbol, lot1, OP_SELL))        //Check Balance khi lenh cho duoc Hit
+      {
+         if(!OrderSend(Symbol(), OP_SELL, lot1, OpenPrice, slippage, SL, TP, comment, InpMagic, 0, clrRed))
+         Print(__FUNCTION__,"--> OrderSend error ",GetLastError());
+      }
+   }
+   
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+void TrailingStop() {
+
+   for(int i = OrdersTotal() - 1; i >= 0; i--) {
+      if(OrderSelect(i, SELECT_BY_POS, MODE_TRADES)) {
+         if((OrderMagicNumber() == InpMagic) && (OrderSymbol() == Symbol())) {
+            // For Buy order
+            if(OrderType() == OP_BUY) {
+               double Profit_Buy_point = Bid - OrderOpenPrice();
+               
+               //Check Profit to get Trailing condition
+               if(!isSLBuyOrd_Trigger && Profit_Buy_point > ExtTrailingTrigger) {
+                   isSLBuyOrd_Trigger = true;
+               }
+
+               if(isSLBuyOrd_Trigger) {//--1               
+                  if(Profit_Buy_point > ExtTrailingStop + ExtTrailingStep){
+                     if((OrderStopLoss()<(Bid - (ExtTrailingStop + ExtTrailingStep)))) {
+                        double newSL = NormalizeDouble(Bid - ExtTrailingStop, _Digits);
+                       
+                        double newTP = 0;
+                        if(InpTP_Pips != 0) newTP = OrderTakeProfit();
+                           
+                        if(CheckStopLoss(Bid, newSL, newTP)) {
+                              if(!OrderModify(OrderTicket(), OrderOpenPrice(), newSL, newTP, 0 , clrBlue)) {
+                                 Print(__FUNCTION__,"OrderModify BUY error ",GetLastError());
+                                 continue;
+                           }
+                        }
+                     }
+                  }
+
+               }//--1
+               
+            }
+            //For Sell Order
+            else if(OrderType() == OP_SELL) {
+               double Profit_Sell_point = OrderOpenPrice() - Ask;
+               //Check Profit to get Trailing condition
+               if(!isSLSellOrd_Trigger && Profit_Sell_point > ExtTrailingTrigger) {
+                   isSLSellOrd_Trigger = true;
+               }
+
+               if(isSLSellOrd_Trigger) {//--1               
+                  if(Profit_Sell_point > ExtTrailingStop + ExtTrailingStep){
+                     if((OrderStopLoss()>(Ask + (ExtTrailingStop + ExtTrailingStep))) || (OrderStopLoss()==0)) {
+                        double newSL = NormalizeDouble(Ask + ExtTrailingStop, _Digits);
+                       
+                        double newTP = 0;
+                        if(InpTP_Pips != 0) newTP = OrderTakeProfit();
+                           
+                        if(CheckStopLoss(Ask, newSL, newTP)) {
+                              if(!OrderModify(OrderTicket(), OrderOpenPrice(), newSL, newTP, 0 , clrRed)) {
+                                 Print(__FUNCTION__,"OrderModify SELL error ",GetLastError());
+                                 continue;
+                           }
+                        }
+                     }
+                  }
+
+               }//--1
+            }
+         }
+      }
+   } 
+}//end function
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+void UpdateOrders() {
+
+   isOrder = false;
+  
+   for(int i = 0; i < OrdersTotal(); i++) {
+      if(!OrderSelect(i,SELECT_BY_POS, MODE_TRADES)) continue;
+
+      if(OrderSymbol() == _Symbol && OrderMagicNumber() == InpMagic) {
+         if(OrderType() == OP_BUY || OrderType() == OP_SELL) {
+            isOrder = true;
+         }
+         
+         if(OrderType() == OP_BUY) {
+            isSLSellOrd_Trigger = false;
+         }
+         else if(OrderType() == OP_SELL) {
+            isSLBuyOrd_Trigger = false;
+         }
+         else {
+            isSLSellOrd_Trigger = false;
+            isSLBuyOrd_Trigger = false;
+         }         
+      }       
+   }
+}
+
+//+------------------------------------------------------------------+
+//| CALCULATE VOLUME                                                 |
+//+------------------------------------------------------------------+
+double CalculateVolume() {
+
+   double LotSize = 0;
+
+   if(isVolume_Percent == false) {
+      LotSize = Inpuser_lot;
+   }
+   else {
+      LotSize = (InpRisk) * AccountFreeMargin();
+      LotSize = LotSize /100000;
+      double n = MathFloor(LotSize/Inpuser_lot);
+      //Comment((string)n);
+      LotSize = n * Inpuser_lot;
+
+      if(LotSize < Inpuser_lot)
+         LotSize = Inpuser_lot;
+
+      if(LotSize > MarketInfo(Symbol(),MODE_MAXLOT))
+         LotSize = MarketInfo(Symbol(),MODE_MAXLOT);
+
+      if(LotSize < MarketInfo(Symbol(),MODE_MINLOT))
+         LotSize = MarketInfo(Symbol(),MODE_MINLOT);
+   }
+
+   return(LotSize);
+}
+//+------------------------------------------------------------------+
+//| Check Spread Allow                                               |
+//+------------------------------------------------------------------+
+bool CheckSpreadAllow() {
+
+   //double acSpread = NormalizeDouble(MarketInfo(_Symbol, MODE_SPREAD), _Digits) / Pips2Points;
+   //acSpread = MarketInfo(_Symbol, MODE_SPREAD);// / Pips2Points;
+   if(InpMax_spread != 0){
+      if(acSpread > InpMax_spread){
+         Print(__FUNCTION__," > current Spread = " + (string)acSpread + " > greater than user Spread!...");
+         return false;
+      }
+   }
+   
+   return true;
+}
+
+//+------------------------------------------------------------------+
+//| Check the correctness of the order volume                        |
+//+------------------------------------------------------------------+
+bool CheckVolumeValue(double volume) {
+
+//--- minimal allowed volume for trade operations
+  double min_volume=SymbolInfoDouble(_Symbol, SYMBOL_VOLUME_MIN);
+   if(volume < min_volume)
+     {
+      //description = StringFormat("Volume is less than the minimal allowed SYMBOL_VOLUME_MIN=%.2f",min_volume);
+      return(false);
+     }
+
+//--- maximal allowed volume of trade operations
+   double max_volume=SymbolInfoDouble(_Symbol, SYMBOL_VOLUME_MAX);
+   if(volume>max_volume)
+     {
+      //description = StringFormat("Volume is greater than the maximal allowed SYMBOL_VOLUME_MAX=%.2f",max_volume);
+      return(false);
+     }
+
+//--- get minimal step of volume changing
+   double volume_step=SymbolInfoDouble(_Symbol, SYMBOL_VOLUME_STEP);
+
+   int ratio = (int)MathRound(volume/volume_step);
+   if(MathAbs(ratio*volume_step-volume)>0.0000001)
+     {
+      //description = StringFormat("Volume is not a multiple of the minimal step SYMBOL_VOLUME_STEP=%.2f, the closest correct volume is %.2f", volume_step,ratio*volume_step);
+      return(false);
+     }
+      
+   return(true);
+}
+//+------------------------------------------------------------------+
+//|CHECK SL AND TP FOR PENDING ORDER                                 |
+//+------------------------------------------------------------------+
+
+bool CheckStopLoss(double price, double SL, double TP) {
+
+//--- get the SYMBOL_TRADE_STOPS_LEVEL level
+   int stops_level = (int)SymbolInfoInteger(_Symbol, SYMBOL_TRADE_STOPS_LEVEL);
+   if(stops_level != 0)
+     {
+      PrintFormat("SYMBOL_TRADE_STOPS_LEVEL=%d: StopLoss and TakeProfit must"+
+                  " not be nearer than %d points from the closing price", stops_level, stops_level);
+     }
+//---
+   bool SL_check = true;
+   bool TP_check = true;
+   
+   if(SL != 0)
+   {
+      //--- check the StopLoss
+      SL_check = MathAbs(price - SL) > (stops_level * _Point);
+   }
+   
+   if(TP != 0)
+   {
+      //--- check the Takeprofit
+      TP_check = MathAbs(price - TP) > (stops_level * _Point);
+   }
+      //--- return the result of checking
+      return(TP_check&&SL_check);  
+}
+
+//+------------------------------------------------------------------+
+//| Check Money for Trade                                            |
+//+------------------------------------------------------------------+
+bool CheckMoneyForTrade(string symb, double lots, int type) {
+
+   double free_margin = AccountFreeMarginCheck(symb, type, lots);
+   //-- if there is not enough money
+   if(free_margin<0)
+     {
+      string oper=(type==OP_BUY)? "Buy":"Sell";
+      Print("Will not enough money for ", oper," ",lots, " ", symb, " Error code=",GetLastError());
+      return(false);
+     }
+   //--- checking successful
+   return(true);
+}
+
+
+//+------------------------------------------------------------------+
+//| Day Of Week Description                                          |
+//+------------------------------------------------------------------+
+string DayOfWeekDescription(const int day_of_week) {
+
+   string text="";
+   switch(day_of_week)
+     {
+      case  0:
+         text="Sunday";
+         break;
+   case  1:
+         text="Monday";
+         break;
+      case  2:
+         text="Tuesday";
+         break;
+      case  3:
+         text="Wednesday";
+         break;
+      case  4:
+         text="Thursday";
+         break;
+      case  5:
+         text="Friday";
+         break;
+      case  6:
+         text="Saturday";
+         break;
+      default:
+         text="Another day";
+         break;
+     }
+//---
+   return(text);
+ push:
     branches: [ "FSLS" ]
   pull_request:
     branches: [ "FSLS" ]
